@@ -1,0 +1,19 @@
+// firebase.js
+import { initializeApp } from 'firebase/app';
+import { getStorage } from 'firebase/storage';
+
+// Your Firebase configuration
+const firebaseConfig = {
+  apiKey: 'AIzaSyCMDepHao2x9s4SMBZ4xHX-EhlyRRsMqF4',
+  authDomain: 'sidegig-1f41f.firebaseapp.com',
+  projectId: 'sidegig-1f41f',
+  storageBucket: 'sidegig-1f41f.appspot.com',
+  messagingSenderId: '826333349347',
+  appId: '1:826333349347:web:a963e99c0c5bfe1e0fccd6',
+  measurementId: 'G-EL6Q3DNX4F'
+};
+
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
+
+export { storage };
